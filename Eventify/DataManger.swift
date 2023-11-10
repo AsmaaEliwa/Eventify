@@ -44,21 +44,24 @@ class DataManger{
     }
     
     
-    func fetchUser(username:String)->User{
+    func fetchUser(username: String) -> User? {
         let request: NSFetchRequest<User> = User.fetchRequest()
-        request.predicate = NSPredicate.init(format: "username == @%", username)
-        
+        request.predicate = NSPredicate(format: "username == %@", username)
+
         do {
-            let user = try  persistentContainer.viewContext.fetch(request)
-            print("found user")
-            return user[0]
-        }catch{
-            print(error)
-            return User()
+            let users = try persistentContainer.viewContext.fetch(request)
+            if let user = users.first {
+                print("Found user")
+                return user
+            } else {
+                print("User not found")
+                return nil // Return nil if user not found
+            }
+        } catch {
+            print("Error fetching user: \(error)")
+            return nil // Return nil in case of an error
         }
-        
     }
-    
     
     
     

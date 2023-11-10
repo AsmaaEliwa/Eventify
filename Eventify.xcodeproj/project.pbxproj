@@ -27,6 +27,7 @@
 		7F6786FF2AFE580800D9BBF3 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786FE2AFE580700D9BBF3 /* SignupView.swift */; };
 		7F6787012AFE581C00D9BBF3 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787002AFE581C00D9BBF3 /* SigninView.swift */; };
 		7F6787032AFE652700D9BBF3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787022AFE652700D9BBF3 /* HomeView.swift */; };
+		7F6787052AFE66E800D9BBF3 /* UserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787042AFE66E800D9BBF3 /* UserManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		7F6786FE2AFE580700D9BBF3 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		7F6787002AFE581C00D9BBF3 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		7F6787022AFE652700D9BBF3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7F6787042AFE66E800D9BBF3 /* UserManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				7F6786F62AFE4F2D00D9BBF3 /* DataManger.swift */,
 				7F6786FA2AFE4FF100D9BBF3 /* Views */,
 				7F6786FD2AFE554E00D9BBF3 /* Componants */,
+				7F6787042AFE66E800D9BBF3 /* UserManger.swift */,
 			);
 			path = Eventify;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				7F6786EE2AFE4ED700D9BBF3 /* Event+CoreDataProperties.swift in Sources */,
 				7F6786D22AFE4ABB00D9BBF3 /* EventifyApp.swift in Sources */,
 				7F6786F02AFE4ED700D9BBF3 /* User+CoreDataProperties.swift in Sources */,
+				7F6787052AFE66E800D9BBF3 /* UserManger.swift in Sources */,
 				7F6786F92AFE4FDF00D9BBF3 /* splashView.swift in Sources */,
 				7F6786D72AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld in Sources */,
 				7F6786ED2AFE4ED700D9BBF3 /* Event+CoreDataClass.swift in Sources */,
