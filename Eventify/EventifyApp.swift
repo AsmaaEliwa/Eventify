@@ -9,12 +9,23 @@ import SwiftUI
 
 @main
 struct EventifyApp: App {
-    let persistenceController = PersistenceController.shared
-
+    let persistenceController = DataManger.shared.persistentContainer
+    @AppStorage("loggedIn") var loggedIn = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationStack{
+                if loggedIn {
+                               HomeView()
+                                    .environmentObject(UserManager())
+                                   .environment(\.managedObjectContext, persistenceController.viewContext)
+                } else {
+                    NavigationView {
+                        SigninView()
+                            .environment(\.managedObjectContext, persistenceController.viewContext)
+                    }
+                }
+            }
         }
     }
+        
 }
