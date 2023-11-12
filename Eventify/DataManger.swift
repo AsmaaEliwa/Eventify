@@ -64,8 +64,34 @@ class DataManger{
     }
     
     
+    func fetchEvents()-> [Event]{
+        let request:NSFetchRequest<Event> = Event.fetchRequest()
+        do {
+            let events = try persistentContainer.viewContext.fetch(request)
+            return events
+        }catch{
+            print(error)
+            return []
+        }
+    }
     
     
+    func addEvent(title:String , details:String , address:String ,user:User){
+        if let entity =  NSEntityDescription.entity(forEntityName: "Event", in: persistentContainer.viewContext){
+            let event = NSManagedObject(entity:entity , insertInto: persistentContainer.viewContext)
+            event.setValue(title, forKey: "title")
+            event.setValue(details, forKey: "details")
+            event.setValue(address, forKey: "address")
+            user.addToEvents(event as! Event)
+            
+            do{
+                try persistentContainer.viewContext.save()
+                print("event added")
+            }catch {
+                print(error)
+            }
+        }
+    }
     
     
     

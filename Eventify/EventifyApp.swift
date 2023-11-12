@@ -10,23 +10,31 @@ import SwiftUI
 @main
 struct EventifyApp: App {
     let persistenceController = DataManger.shared.persistentContainer
-//    @AppStorage("loggedIn") var loggedIn = false
+    @AppStorage("loggedIn") var loggedIn:Bool?
     @StateObject var userManager = UserManager() // Create a single instance of UserManager
-
+    @StateObject var viewRouter = ViewRouter()
+    
     var body: some Scene {
-        WindowGroup {
-            NavigationStack {
-//                if  loggedIn == true  {
-//                    
-//                    HomeView()
-//                        .environment(\.managedObjectContext, persistenceController.viewContext)
-//                        .environmentObject(userManager) // Provide the single instance of UserManager
-//                } else {
-                    splashView()
-                        .environment(\.managedObjectContext, persistenceController.viewContext)
-                        .environmentObject(userManager) // Provide the single instance of UserManager
-//                }
+            WindowGroup {
+                rootView(for: viewRouter.currentRoot)
+                           .environmentObject(viewRouter) // Make sure the ViewRouter is available
+                           .environmentObject(userManager)
+                           .onAppear {
+                               viewRouter.determineRootView(loggedIn: loggedIn ?? true)
+                           }
             }
         }
+
+    @ViewBuilder
+    func rootView(for root: RootView) -> some View {
+        switch root {
+            case .splash:
+                splashView()
+                    .environment(\.managedObjectContext, persistenceController.viewContext)
+                    .environmentObject(viewRouter) // Pass the ViewRouter
+            case .home:
+                HomeView()
+                    .environmentObject(userManager)
+        }
     }
-}
+    }

@@ -28,6 +28,7 @@
 		7F6787012AFE581C00D9BBF3 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787002AFE581C00D9BBF3 /* SigninView.swift */; };
 		7F6787032AFE652700D9BBF3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787022AFE652700D9BBF3 /* HomeView.swift */; };
 		7F6787052AFE66E800D9BBF3 /* UserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787042AFE66E800D9BBF3 /* UserManger.swift */; };
+		7F67870B2B00F36B00D9BBF3 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67870A2B00F36B00D9BBF3 /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		7F6787002AFE581C00D9BBF3 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		7F6787022AFE652700D9BBF3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7F6787042AFE66E800D9BBF3 /* UserManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManger.swift; sourceTree = "<group>"; };
+		7F67870A2B00F36B00D9BBF3 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				7F6786FE2AFE580700D9BBF3 /* SignupView.swift */,
 				7F6787002AFE581C00D9BBF3 /* SigninView.swift */,
 				7F6787022AFE652700D9BBF3 /* HomeView.swift */,
+				7F67870A2B00F36B00D9BBF3 /* ViewRouter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				7F6786FC2AFE531C00D9BBF3 /* input.swift in Sources */,
 				7F6786F72AFE4F2D00D9BBF3 /* DataManger.swift in Sources */,
 				7F6786FF2AFE580800D9BBF3 /* SignupView.swift in Sources */,
+				7F67870B2B00F36B00D9BBF3 /* ViewRouter.swift in Sources */,
 				7F6786F12AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift in Sources */,
 				7F6786F42AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift in Sources */,
 				7F6786EF2AFE4ED700D9BBF3 /* User+CoreDataClass.swift in Sources */,

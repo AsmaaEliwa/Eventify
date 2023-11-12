@@ -14,8 +14,8 @@
             filePath = "Eventify/Views/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "HomeView"
             landmarkType = "14">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "Eventify/Views/SigninView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -78,88 +78,10 @@
             filePath = "Eventify/UserManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "UserManager"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6B00A0E0-A113-40E6-9922-AD9EB75CCD4B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Eventify/EventifyApp.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "body"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "isLoggedIn"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "6B00A0E0-A113-40E6-9922-AD9EB75CCD4B - 14b7d879222a8e66"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0&gt; in Eventify.EventifyApp.body.getter : some"
-                  moduleName = "Eventify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/Eventify/Eventify/EventifyApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "55">
-               </Location>
-               <Location
-                  uuid = "6B00A0E0-A113-40E6-9922-AD9EB75CCD4B - 82cff064369c1fc8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, perform: (&#x3c4;_1_0) -&gt; ()) -&gt; some&gt;&gt;.0&gt; in Eventify.EventifyApp.body.getter : some"
-                  moduleName = "Eventify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/Eventify/Eventify/EventifyApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "83">
-               </Location>
-               <Location
-                  uuid = "6B00A0E0-A113-40E6-9922-AD9EB75CCD4B - de8500e9a584df5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;&gt; in Eventify.EventifyApp.body.getter : some"
-                  moduleName = "Eventify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/Eventify/Eventify/EventifyApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "286">
-               </Location>
-               <Location
-                  uuid = "6B00A0E0-A113-40E6-9922-AD9EB75CCD4B - de8500e9a584df5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.NavigationStack&lt;SwiftUI.NavigationPath, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.environmentObject&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.ObservableObject&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;&gt; in Eventify.EventifyApp.body.getter : some"
-                  moduleName = "Eventify"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/Eventify/Eventify/EventifyApp.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "83">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -172,8 +94,8 @@
             filePath = "Eventify/Views/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -206,6 +128,54 @@
                   startingLineNumber = "18"
                   endingLineNumber = "18"
                   offsetFromSymbolStart = "70">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A96156D-D6E4-4858-8BCE-7C6FDFDD96A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Eventify/EventifyApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "EventifyApp"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "7A96156D-D6E4-4858-8BCE-7C6FDFDD96A1 - 28eccaf566c8a97d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventify.EventifyApp.body.getter : some"
+                  moduleName = "Eventify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/Eventify/Eventify/EventifyApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "358">
+               </Location>
+               <Location
+                  uuid = "7A96156D-D6E4-4858-8BCE-7C6FDFDD96A1 - 28eccaf566c8a99c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Eventify.EventifyApp.body.getter : some"
+                  moduleName = "Eventify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/Eventify/Eventify/EventifyApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "358">
                </Location>
             </Locations>
          </BreakpointContent>

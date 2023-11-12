@@ -12,9 +12,10 @@ struct SigninView: View {
     @State var username = ""
     @State var password = ""
     @State var showValidationAlert = false
-    @AppStorage("loggedIn") var loggedIn:Bool = false
+    @AppStorage("loggedIn") var loggedIn:Bool?
     @AppStorage("username") var user = ""
     @EnvironmentObject var userManager: UserManager
+    @EnvironmentObject var viewRouter: ViewRouter
     @State private var currentView: AnyView?
     @State var didSignin = false
     var body: some View {
@@ -31,9 +32,10 @@ struct SigninView: View {
                     
                     if   loguser?.password == password {
                         loggedIn = true
+                        userManager.isLoggedIn = true
+                          userManager.login(loggedUser: loguser ?? User())
+                        viewRouter.determineRootView(loggedIn: true)
                         user = loguser?.username ?? ""
-                        userManager.login(loggedUser: loguser ?? User())
-                        didSignin = true
                     }
                 }
             }label: {
@@ -42,7 +44,7 @@ struct SigninView: View {
             
             Spacer()
         }.padding().shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-            .background(NavigationLink("", destination: HomeView().environmentObject(userManager), isActive: $didSignin).hidden())
+//            .background(NavigationLink("", destination: HomeView().environmentObject(userManager), isActive: $didSignin).hidden())
 //            .onReceive(Just(loggedIn)) { loggedIn in
 //                if loggedIn {
 //                    currentView = AnyView(HomeView())

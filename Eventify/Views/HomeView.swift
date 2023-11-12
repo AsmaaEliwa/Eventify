@@ -11,12 +11,13 @@ struct HomeView: View {
     @AppStorage("loggedIn") var loggedIn:Bool?
     @AppStorage("username") var user:String?
     @EnvironmentObject var userManager: UserManager
+    @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
         VStack{
             
             Button{
                 loggedIn = false
-                userManager.logout()
+                userManager.logout(viewRouter: viewRouter)
                 user = ""
             }label: {
                 Label("logout",systemImage: "arrow.backward.circle").foregroundColor(.red)
