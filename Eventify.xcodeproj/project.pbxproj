@@ -29,6 +29,9 @@
 		7F6787032AFE652700D9BBF3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787022AFE652700D9BBF3 /* HomeView.swift */; };
 		7F6787052AFE66E800D9BBF3 /* UserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787042AFE66E800D9BBF3 /* UserManger.swift */; };
 		7F67870B2B00F36B00D9BBF3 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67870A2B00F36B00D9BBF3 /* ViewRouter.swift */; };
+		7F67870D2B01113F00D9BBF3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67870C2B01113F00D9BBF3 /* MenuView.swift */; };
+		7F67870F2B011D8600D9BBF3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67870E2B011D8600D9BBF3 /* ProfileView.swift */; };
+		7F6787112B0157DA00D9BBF3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787102B0157DA00D9BBF3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		7F6787022AFE652700D9BBF3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7F6787042AFE66E800D9BBF3 /* UserManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManger.swift; sourceTree = "<group>"; };
 		7F67870A2B00F36B00D9BBF3 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7F67870C2B01113F00D9BBF3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		7F67870E2B011D8600D9BBF3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7F6787102B0157DA00D9BBF3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,9 @@
 				7F6787002AFE581C00D9BBF3 /* SigninView.swift */,
 				7F6787022AFE652700D9BBF3 /* HomeView.swift */,
 				7F67870A2B00F36B00D9BBF3 /* ViewRouter.swift */,
+				7F67870C2B01113F00D9BBF3 /* MenuView.swift */,
+				7F67870E2B011D8600D9BBF3 /* ProfileView.swift */,
+				7F6787102B0157DA00D9BBF3 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,7 +233,9 @@
 				7F6786F92AFE4FDF00D9BBF3 /* splashView.swift in Sources */,
 				7F6786D72AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld in Sources */,
 				7F6786ED2AFE4ED700D9BBF3 /* Event+CoreDataClass.swift in Sources */,
+				7F67870D2B01113F00D9BBF3 /* MenuView.swift in Sources */,
 				7F6786D92AFE4ABB00D9BBF3 /* ContentView.swift in Sources */,
+				7F6787112B0157DA00D9BBF3 /* MapView.swift in Sources */,
 				7F6786F22AFE4ED700D9BBF3 /* EventImage+CoreDataProperties.swift in Sources */,
 				7F6786F32AFE4ED700D9BBF3 /* Comment+CoreDataClass.swift in Sources */,
 				7F6787032AFE652700D9BBF3 /* HomeView.swift in Sources */,
@@ -236,6 +247,7 @@
 				7F6786F12AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift in Sources */,
 				7F6786F42AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift in Sources */,
 				7F6786EF2AFE4ED700D9BBF3 /* User+CoreDataClass.swift in Sources */,
+				7F67870F2B011D8600D9BBF3 /* ProfileView.swift in Sources */,
 				7F6787012AFE581C00D9BBF3 /* SigninView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

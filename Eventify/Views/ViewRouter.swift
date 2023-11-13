@@ -17,4 +17,6 @@ class ViewRouter: ObservableObject {
     func determineRootView(loggedIn: Bool) {
         currentRoot = loggedIn ? .home : .splash
     }
+    
+    
 }
