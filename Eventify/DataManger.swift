@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 class DataManger{
     static let shared = DataManger()
     lazy var persistentContainer: NSPersistentContainer = {
@@ -74,16 +75,32 @@ class DataManger{
             return []
         }
     }
+    func addImage(imageUrl:String ,event:Event){
+        if let entity =  NSEntityDescription.entity(forEntityName: "EventImage", in: persistentContainer.viewContext){
+            let eImage = NSManagedObject(entity:entity , insertInto: persistentContainer.viewContext)
+            eImage.setValue(imageUrl, forKey: "imageUrl")
+            event.addToEventImages(eImage as! EventImage)
+            do{
+                try persistentContainer.viewContext.save()
+                print("imageSaved")
+            }catch {
+                print(error)
+            }
+        }
+    }
     
-    
-    func addEvent(title:String , details:String , address:String ,user:User){
+    func addEvent(title:String , details:String , address:String ,user:User ,images: [UIImage?] ){
         if let entity =  NSEntityDescription.entity(forEntityName: "Event", in: persistentContainer.viewContext){
             let event = NSManagedObject(entity:entity , insertInto: persistentContainer.viewContext)
             event.setValue(title, forKey: "title")
             event.setValue(details, forKey: "details")
             event.setValue(address, forKey: "address")
             user.addToEvents(event as! Event)
-            
+            let imagesUrls = ImageModel().saveImagesToFile(images)
+            for url in imagesUrls {
+                addImage(imageUrl: url, event: event as! Event)
+//
+            }
             do{
                 try persistentContainer.viewContext.save()
                 print("event added")

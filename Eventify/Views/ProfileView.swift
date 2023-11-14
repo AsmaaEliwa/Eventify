@@ -6,13 +6,16 @@
 //
 
 import SwiftUI
-
+import MapKit
 struct ProfileView: View {
     @EnvironmentObject var userManager: UserManager
     @EnvironmentObject var viewRouter: ViewRouter
     @State var showAddEvent = false
     @State var title = ""
     @State var details = ""
+    @State var selectedCoordinate: CLLocationCoordinate2D?
+    @State var selectedImages:[UIImage?]
+    @State var searchResults: [MKMapItem]
     var body: some View{
         VStack{
             Button{
@@ -38,7 +41,23 @@ struct ProfileView: View {
                         Text("New Event!").foregroundColor(Color("node")).shadow(radius: 10).font(.system(size: 25))
                         input(lable: "Event title", text: $title, placeholder: "Enter Event Title")
                         input(lable: "Event Details", text: $title, placeholder: "Enter Event Details")
-                        
+                        ImageInput(label: "Event Picture", selectedImages:
+                    $selectedImages)
+                        Map{
+                            Annotation("parking", coordinate: .parking){
+                                
+                            }.annotationTitles(.hidden)
+                            ForEach(searchResults, id:\.self){result in
+                                Marker(item: result)
+                            }
+                        }
+                            .mapStyle(.standard(elevation: .realistic)).safeAreaInset(edge: .bottom){
+                            HStack{
+                                Spacer()
+                                MapBtns(searchResults: $searchResults).padding(.top)
+                                Spacer()
+                            }.background(.thinMaterial)
+                        }.padding()
                         
                         Button{
                             
@@ -52,6 +71,6 @@ struct ProfileView: View {
     
 }
 
-#Preview {
-    ProfileView()
-}
+//#Preview {
+//    ProfileView()
+//}
