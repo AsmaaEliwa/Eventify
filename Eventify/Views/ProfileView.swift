@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+
 struct ProfileView: View {
     @EnvironmentObject var userManager: UserManager
     @EnvironmentObject var viewRouter: ViewRouter
@@ -15,7 +16,14 @@ struct ProfileView: View {
     @State var details = ""
     @State var selectedCoordinate: CLLocationCoordinate2D?
     @State var selectedImages:[UIImage?]
-    @State var searchResults: [MKMapItem]
+       @State private var region = MKCoordinateRegion(
+           center: CLLocationCoordinate2D(
+               latitude: 40.83834587046632,
+               longitude: 14.254053016537693),
+           span: MKCoordinateSpan(
+               latitudeDelta: 0.03,
+               longitudeDelta: 0.03)
+       )
     var body: some View{
         VStack{
             Button{
@@ -40,27 +48,20 @@ struct ProfileView: View {
                     VStack{
                         Text("New Event!").foregroundColor(Color("node")).shadow(radius: 10).font(.system(size: 25))
                         input(lable: "Event title", text: $title, placeholder: "Enter Event Title")
-                        input(lable: "Event Details", text: $title, placeholder: "Enter Event Details")
+                        input(lable: "Event Details", text: $details, placeholder: "Enter Event Details")
                         ImageInput(label: "Event Picture", selectedImages:
                     $selectedImages)
-                        Map{
-                            Annotation("parking", coordinate: .parking){
-                                
-                            }.annotationTitles(.hidden)
-                            ForEach(searchResults, id:\.self){result in
-                                Marker(item: result)
-                            }
-                        }
-                            .mapStyle(.standard(elevation: .realistic)).safeAreaInset(edge: .bottom){
-                            HStack{
-                                Spacer()
-                                MapBtns(searchResults: $searchResults).padding(.top)
-                                Spacer()
-                            }.background(.thinMaterial)
-                        }.padding()
+                        
+                        
+                        VStack {
+                                 MapViewRepresentable(selectedCoordinate: $selectedCoordinate, region: $region)
+//                                     .edgesIgnoringSafeArea(.all)
+
+                                 Text("Selected Coordinate: \(selectedCoordinate?.latitude ?? 0), \(selectedCoordinate?.longitude ?? 0)")
+                             }
                         
                         Button{
-                            
+                            DataManger.shared.addEvent(title: title, details: details, user: userManager.user ?? User(), images: selectedImages,location: selectedCoordinate ?? CLLocationCoordinate2D() )
                         }label: {
                             Label("Save",systemImage: "note").foregroundColor(Color("node")).padding()
                         }
@@ -72,5 +73,6 @@ struct ProfileView: View {
 }
 
 //#Preview {
-//    ProfileView()
+//    ProfileView( selectedImages: [])
 //}
+

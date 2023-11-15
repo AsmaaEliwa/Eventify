@@ -9,18 +9,9 @@
 /* Begin PBXBuildFile section */
 		7F6786D22AFE4ABB00D9BBF3 /* EventifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786D12AFE4ABB00D9BBF3 /* EventifyApp.swift */; };
 		7F6786D42AFE4ABB00D9BBF3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786D32AFE4ABB00D9BBF3 /* Persistence.swift */; };
-		7F6786D72AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786D52AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld */; };
 		7F6786D92AFE4ABB00D9BBF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786D82AFE4ABB00D9BBF3 /* ContentView.swift */; };
 		7F6786DB2AFE4AC200D9BBF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6786DA2AFE4AC200D9BBF3 /* Assets.xcassets */; };
 		7F6786DF2AFE4AC200D9BBF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6786DE2AFE4AC200D9BBF3 /* Preview Assets.xcassets */; };
-		7F6786ED2AFE4ED700D9BBF3 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786E52AFE4ED700D9BBF3 /* Event+CoreDataClass.swift */; };
-		7F6786EE2AFE4ED700D9BBF3 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786E62AFE4ED700D9BBF3 /* Event+CoreDataProperties.swift */; };
-		7F6786EF2AFE4ED700D9BBF3 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786E72AFE4ED700D9BBF3 /* User+CoreDataClass.swift */; };
-		7F6786F02AFE4ED700D9BBF3 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786E82AFE4ED700D9BBF3 /* User+CoreDataProperties.swift */; };
-		7F6786F12AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786E92AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift */; };
-		7F6786F22AFE4ED700D9BBF3 /* EventImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786EA2AFE4ED700D9BBF3 /* EventImage+CoreDataProperties.swift */; };
-		7F6786F32AFE4ED700D9BBF3 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786EB2AFE4ED700D9BBF3 /* Comment+CoreDataClass.swift */; };
-		7F6786F42AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786EC2AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift */; };
 		7F6786F72AFE4F2D00D9BBF3 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786F62AFE4F2D00D9BBF3 /* DataManger.swift */; };
 		7F6786F92AFE4FDF00D9BBF3 /* splashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786F82AFE4FDF00D9BBF3 /* splashView.swift */; };
 		7F6786FC2AFE531C00D9BBF3 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6786FB2AFE531C00D9BBF3 /* input.swift */; };
@@ -36,25 +27,26 @@
 		7F6787372B02FE2F00D9BBF3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787362B02FE2F00D9BBF3 /* ImagePicker.swift */; };
 		7F67873A2B03AC4800D9BBF3 /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787392B03AC4800D9BBF3 /* LocationManger.swift */; };
 		7F67873C2B03BB3B00D9BBF3 /* MapBtns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67873B2B03BB3B00D9BBF3 /* MapBtns.swift */; };
+		7F67873E2B04279000D9BBF3 /* MapModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67873D2B04278F00D9BBF3 /* MapModule.swift */; };
+		7F6787512B04E52200D9BBF3 /* EventifyData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F67874F2B04E52200D9BBF3 /* EventifyData.xcdatamodeld */; };
+		7F67876A2B04E8C100D9BBF3 /* EventImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787622B04E8C100D9BBF3 /* EventImage+CoreDataClass.swift */; };
+		7F67876B2B04E8C100D9BBF3 /* EventImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787632B04E8C100D9BBF3 /* EventImage+CoreDataProperties.swift */; };
+		7F67876C2B04E8C100D9BBF3 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787642B04E8C100D9BBF3 /* User+CoreDataClass.swift */; };
+		7F67876D2B04E8C100D9BBF3 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787652B04E8C100D9BBF3 /* User+CoreDataProperties.swift */; };
+		7F67876E2B04E8C100D9BBF3 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787662B04E8C100D9BBF3 /* Event+CoreDataClass.swift */; };
+		7F67876F2B04E8C100D9BBF3 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787672B04E8C100D9BBF3 /* Event+CoreDataProperties.swift */; };
+		7F6787702B04E8C100D9BBF3 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */; };
+		7F6787712B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F6786CE2AFE4ABB00D9BBF3 /* Eventify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6786D12AFE4ABB00D9BBF3 /* EventifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventifyApp.swift; sourceTree = "<group>"; };
 		7F6786D32AFE4ABB00D9BBF3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7F6786D62AFE4ABB00D9BBF3 /* Eventify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eventify.xcdatamodel; sourceTree = "<group>"; };
 		7F6786D82AFE4ABB00D9BBF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F6786DA2AFE4AC200D9BBF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F6786DC2AFE4AC200D9BBF3 /* Eventify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eventify.entitlements; sourceTree = "<group>"; };
 		7F6786DE2AFE4AC200D9BBF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7F6786E52AFE4ED700D9BBF3 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7F6786E62AFE4ED700D9BBF3 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7F6786E72AFE4ED700D9BBF3 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7F6786E82AFE4ED700D9BBF3 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7F6786E92AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventImage+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7F6786EA2AFE4ED700D9BBF3 /* EventImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7F6786EB2AFE4ED700D9BBF3 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7F6786EC2AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7F6786F62AFE4F2D00D9BBF3 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
 		7F6786F82AFE4FDF00D9BBF3 /* splashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashView.swift; sourceTree = "<group>"; };
 		7F6786FB2AFE531C00D9BBF3 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
@@ -70,6 +62,16 @@
 		7F6787362B02FE2F00D9BBF3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7F6787392B03AC4800D9BBF3 /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
 		7F67873B2B03BB3B00D9BBF3 /* MapBtns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBtns.swift; sourceTree = "<group>"; };
+		7F67873D2B04278F00D9BBF3 /* MapModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModule.swift; sourceTree = "<group>"; };
+		7F6787502B04E52200D9BBF3 /* EventifyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventifyData.xcdatamodel; sourceTree = "<group>"; };
+		7F6787622B04E8C100D9BBF3 /* EventImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventImage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F6787632B04E8C100D9BBF3 /* EventImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F6787642B04E8C100D9BBF3 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F6787652B04E8C100D9BBF3 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F6787662B04E8C100D9BBF3 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F6787672B04E8C100D9BBF3 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 				7F6786D82AFE4ABB00D9BBF3 /* ContentView.swift */,
 				7F6786DA2AFE4AC200D9BBF3 /* Assets.xcassets */,
 				7F6786DC2AFE4AC200D9BBF3 /* Eventify.entitlements */,
-				7F6786D52AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld */,
+				7F67874F2B04E52200D9BBF3 /* EventifyData.xcdatamodeld */,
 				7F6786DD2AFE4AC200D9BBF3 /* Preview Content */,
 				7F6786F62AFE4F2D00D9BBF3 /* DataManger.swift */,
 				7F6786FA2AFE4FF100D9BBF3 /* Views */,
@@ -130,14 +132,14 @@
 		7F6786F52AFE4EF700D9BBF3 /* CoreDataClasses */ = {
 			isa = PBXGroup;
 			children = (
-				7F6786E52AFE4ED700D9BBF3 /* Event+CoreDataClass.swift */,
-				7F6786E62AFE4ED700D9BBF3 /* Event+CoreDataProperties.swift */,
-				7F6786E72AFE4ED700D9BBF3 /* User+CoreDataClass.swift */,
-				7F6786E82AFE4ED700D9BBF3 /* User+CoreDataProperties.swift */,
-				7F6786E92AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift */,
-				7F6786EA2AFE4ED700D9BBF3 /* EventImage+CoreDataProperties.swift */,
-				7F6786EB2AFE4ED700D9BBF3 /* Comment+CoreDataClass.swift */,
-				7F6786EC2AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift */,
+				7F6787622B04E8C100D9BBF3 /* EventImage+CoreDataClass.swift */,
+				7F6787632B04E8C100D9BBF3 /* EventImage+CoreDataProperties.swift */,
+				7F6787642B04E8C100D9BBF3 /* User+CoreDataClass.swift */,
+				7F6787652B04E8C100D9BBF3 /* User+CoreDataProperties.swift */,
+				7F6787662B04E8C100D9BBF3 /* Event+CoreDataClass.swift */,
+				7F6787672B04E8C100D9BBF3 /* Event+CoreDataProperties.swift */,
+				7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */,
+				7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */,
 			);
 			path = CoreDataClasses;
 			sourceTree = "<group>";
@@ -172,6 +174,7 @@
 			children = (
 				7F6787342B02FC1200D9BBF3 /* ImageModel.swift */,
 				7F6787392B03AC4800D9BBF3 /* LocationManger.swift */,
+				7F67873D2B04278F00D9BBF3 /* MapModule.swift */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -246,31 +249,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F6786EE2AFE4ED700D9BBF3 /* Event+CoreDataProperties.swift in Sources */,
+				7F67876B2B04E8C100D9BBF3 /* EventImage+CoreDataProperties.swift in Sources */,
 				7F6786D22AFE4ABB00D9BBF3 /* EventifyApp.swift in Sources */,
+				7F67876D2B04E8C100D9BBF3 /* User+CoreDataProperties.swift in Sources */,
 				7F6787372B02FE2F00D9BBF3 /* ImagePicker.swift in Sources */,
-				7F6786F02AFE4ED700D9BBF3 /* User+CoreDataProperties.swift in Sources */,
 				7F6787052AFE66E800D9BBF3 /* UserManger.swift in Sources */,
 				7F6786F92AFE4FDF00D9BBF3 /* splashView.swift in Sources */,
-				7F6786D72AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld in Sources */,
-				7F6786ED2AFE4ED700D9BBF3 /* Event+CoreDataClass.swift in Sources */,
+				7F6787712B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift in Sources */,
+				7F67876F2B04E8C100D9BBF3 /* Event+CoreDataProperties.swift in Sources */,
 				7F6787352B02FC1200D9BBF3 /* ImageModel.swift in Sources */,
+				7F67876E2B04E8C100D9BBF3 /* Event+CoreDataClass.swift in Sources */,
+				7F67876C2B04E8C100D9BBF3 /* User+CoreDataClass.swift in Sources */,
 				7F67870D2B01113F00D9BBF3 /* MenuView.swift in Sources */,
 				7F67873A2B03AC4800D9BBF3 /* LocationManger.swift in Sources */,
 				7F6786D92AFE4ABB00D9BBF3 /* ContentView.swift in Sources */,
 				7F6787112B0157DA00D9BBF3 /* MapView.swift in Sources */,
-				7F6786F22AFE4ED700D9BBF3 /* EventImage+CoreDataProperties.swift in Sources */,
-				7F6786F32AFE4ED700D9BBF3 /* Comment+CoreDataClass.swift in Sources */,
 				7F6787032AFE652700D9BBF3 /* HomeView.swift in Sources */,
+				7F6787512B04E52200D9BBF3 /* EventifyData.xcdatamodeld in Sources */,
 				7F6786D42AFE4ABB00D9BBF3 /* Persistence.swift in Sources */,
 				7F67873C2B03BB3B00D9BBF3 /* MapBtns.swift in Sources */,
+				7F6787702B04E8C100D9BBF3 /* Comment+CoreDataClass.swift in Sources */,
+				7F67873E2B04279000D9BBF3 /* MapModule.swift in Sources */,
 				7F6786FC2AFE531C00D9BBF3 /* input.swift in Sources */,
 				7F6786F72AFE4F2D00D9BBF3 /* DataManger.swift in Sources */,
+				7F67876A2B04E8C100D9BBF3 /* EventImage+CoreDataClass.swift in Sources */,
 				7F6786FF2AFE580800D9BBF3 /* SignupView.swift in Sources */,
 				7F67870B2B00F36B00D9BBF3 /* ViewRouter.swift in Sources */,
-				7F6786F12AFE4ED700D9BBF3 /* EventImage+CoreDataClass.swift in Sources */,
-				7F6786F42AFE4ED700D9BBF3 /* Comment+CoreDataProperties.swift in Sources */,
-				7F6786EF2AFE4ED700D9BBF3 /* User+CoreDataClass.swift in Sources */,
 				7F67870F2B011D8600D9BBF3 /* ProfileView.swift in Sources */,
 				7F6787012AFE581C00D9BBF3 /* SigninView.swift in Sources */,
 			);
@@ -489,13 +493,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7F6786D52AFE4ABB00D9BBF3 /* Eventify.xcdatamodeld */ = {
+		7F67874F2B04E52200D9BBF3 /* EventifyData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7F6786D62AFE4ABB00D9BBF3 /* Eventify.xcdatamodel */,
+				7F6787502B04E52200D9BBF3 /* EventifyData.xcdatamodel */,
 			);
-			currentVersion = 7F6786D62AFE4ABB00D9BBF3 /* Eventify.xcdatamodel */;
-			path = Eventify.xcdatamodeld;
+			currentVersion = 7F6787502B04E52200D9BBF3 /* EventifyData.xcdatamodel */;
+			path = EventifyData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

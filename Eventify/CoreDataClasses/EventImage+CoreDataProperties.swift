@@ -2,7 +2,7 @@
 //  EventImage+CoreDataProperties.swift
 //  Eventify
 //
-//  Created by asmaa gamal  on 10/11/2023.
+//  Created by asmaa gamal  on 15/11/2023.
 //
 //
 

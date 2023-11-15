@@ -2,7 +2,7 @@
 //  Comment+CoreDataProperties.swift
 //  Eventify
 //
-//  Created by asmaa gamal  on 10/11/2023.
+//  Created by asmaa gamal  on 15/11/2023.
 //
 //
 
@@ -17,8 +17,8 @@ extension Comment {
     }
 
     @NSManaged public var body: String?
-    @NSManaged public var user: User?
     @NSManaged public var event: Event?
+    @NSManaged public var user: User?
 
 }
 

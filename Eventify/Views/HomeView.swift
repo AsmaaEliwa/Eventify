@@ -49,7 +49,7 @@ struct HomeView: View {
                        HomeContent().environmentObject(userManager)
                            .environmentObject(viewRouter)
                    } else if selectedView == 1 {
-                       ProfileView( selectedImages: [], searchResults:[]).environmentObject(userManager)
+                       ProfileView( selectedImages: []).environmentObject(userManager)
                            .environmentObject(viewRouter)
                    }
                }

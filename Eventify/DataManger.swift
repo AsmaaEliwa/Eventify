@@ -8,10 +8,11 @@
 import Foundation
 import CoreData
 import SwiftUI
+import MapKit
 class DataManger{
     static let shared = DataManger()
     lazy var persistentContainer: NSPersistentContainer = {
-         let container = NSPersistentContainer(name: "Eventify")
+         let container = NSPersistentContainer(name: "EventifyData")
          container.loadPersistentStores { description, error in
              if let error = error {
                  fatalError("Unable to load persistent stores: \(error)")
@@ -45,12 +46,35 @@ class DataManger{
     }
     
     
+//    let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+//                print(paths[0])
+    
+//    func fetchUsers() -> [User?] {
+//        let request: NSFetchRequest<User> = User.fetchRequest()
+//        
+//
+//        do {
+//            let users = try persistentContainer.viewContext.fetch(request)
+//            
+//            if let user = users {
+//                print("Found user")
+//                return user
+//            } else {
+//                print("User not found")
+//                return nil // Return nil if user not found
+//            }
+//        } catch {
+//            print("Error fetching user: \(error)")
+//            return nil // Return nil in case of an error
+//        }
+//    }
     func fetchUser(username: String) -> User? {
         let request: NSFetchRequest<User> = User.fetchRequest()
         request.predicate = NSPredicate(format: "username == %@", username)
 
         do {
             let users = try persistentContainer.viewContext.fetch(request)
+            
             if let user = users.first {
                 print("Found user")
                 return user
@@ -89,12 +113,13 @@ class DataManger{
         }
     }
     
-    func addEvent(title:String , details:String , address:String ,user:User ,images: [UIImage?] ){
+    func addEvent(title:String , details:String ,user:User ,images: [UIImage?] ,location:CLLocationCoordinate2D){
         if let entity =  NSEntityDescription.entity(forEntityName: "Event", in: persistentContainer.viewContext){
             let event = NSManagedObject(entity:entity , insertInto: persistentContainer.viewContext)
             event.setValue(title, forKey: "title")
             event.setValue(details, forKey: "details")
-            event.setValue(address, forKey: "address")
+            event.setValue(location.latitude, forKey: "latitude")
+            event.setValue(location.longitude, forKey: "longitude")
             user.addToEvents(event as! Event)
             let imagesUrls = ImageModel().saveImagesToFile(images)
             for url in imagesUrls {
