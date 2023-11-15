@@ -75,7 +75,7 @@ struct HomeContent: View{
 
                             List {
                                 ForEach(events, id: \.self) { event in
-                                    Text(event.title ?? "")
+                                    EventDetailView(event: event)
                                 }
                             }.navigationTitle("All Events")
                             .onAppear {

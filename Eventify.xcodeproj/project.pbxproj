@@ -37,6 +37,7 @@
 		7F67876F2B04E8C100D9BBF3 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787672B04E8C100D9BBF3 /* Event+CoreDataProperties.swift */; };
 		7F6787702B04E8C100D9BBF3 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */; };
 		7F6787712B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */; };
+		7F6787732B0513C400D9BBF3 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		7F6787672B04E8C100D9BBF3 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				7F6786FB2AFE531C00D9BBF3 /* input.swift */,
 				7F6787362B02FE2F00D9BBF3 /* ImagePicker.swift */,
 				7F67873B2B03BB3B00D9BBF3 /* MapBtns.swift */,
+				7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */,
 			);
 			path = Componants;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				7F6787112B0157DA00D9BBF3 /* MapView.swift in Sources */,
 				7F6787032AFE652700D9BBF3 /* HomeView.swift in Sources */,
 				7F6787512B04E52200D9BBF3 /* EventifyData.xcdatamodeld in Sources */,
+				7F6787732B0513C400D9BBF3 /* EventDetailsView.swift in Sources */,
 				7F6786D42AFE4ABB00D9BBF3 /* Persistence.swift in Sources */,
 				7F67873C2B03BB3B00D9BBF3 /* MapBtns.swift in Sources */,
 				7F6787702B04E8C100D9BBF3 /* Comment+CoreDataClass.swift in Sources */,
@@ -408,6 +412,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Eventify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "app needs access to your gallary";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -444,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Eventify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "app needs access to your gallary";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

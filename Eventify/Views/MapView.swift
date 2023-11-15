@@ -33,9 +33,9 @@ struct MapViewRepresentable: UIViewRepresentable {
             super.init()
         }
 
-        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-            parent.region = mapView.region
-        }
+//        func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+//            parent.region = mapView.region
+//        }
 
         @objc func handleTap(_ gesture: UITapGestureRecognizer) {
             let location = gesture.location(in: gesture.view)
