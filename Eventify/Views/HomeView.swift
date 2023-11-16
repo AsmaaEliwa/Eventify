@@ -16,45 +16,56 @@ struct HomeView: View {
     @State private var selectedView = 0
 
     var body: some View {
-           NavigationView {
+//           NavigationView {
                VStack {
-             
-               }
-               .navigationTitle("Home")
-               .toolbar {
-                   ToolbarItem(placement: .navigationBarTrailing) {
-                                       Menu {
-                                           Button("Profile") {
-                                               selectedView = 1
-                                           }
+                   TabView{
+                       HomeContent().environmentObject(userManager).tabItem {
+                           Image( systemName:"house" )
 
-                                           Button("Home") {
-                                               selectedView = 0
-                                           }
-
-                                           Button("Logout") {
-                                               loggedIn = false
-                                               userManager.logout(viewRouter: viewRouter)
-                                               user = ""
-                                           }
-                                       } label: {
-                                           Label("Menu", systemImage: "ellipsis.circle")
-                                       }
-                                   }
-                               }
-               
-            
-               VStack {
-                   if selectedView == 0 {
-                       HomeContent().environmentObject(userManager)
-                           .environmentObject(viewRouter)
-                   } else if selectedView == 1 {
-                       ProfileView( selectedImages: []).environmentObject(userManager)
-                           .environmentObject(viewRouter)
+                       }
+                       ProfileView(selectedImages: []).environmentObject(userManager).tabItem {
+                           Image(systemName: "person.crop.circle")
+                       }
+                       AllEventsOnMAP(events: []).tabItem {
+                           Image(systemName: "note.text")
+                       }
                    }
                }
+//               .navigationTitle("Home")
+//               .toolbar {
+//                   ToolbarItem(placement: .navigationBarTrailing) {
+//                                       Menu {
+//                                           Button("Profile") {
+//                                               selectedView = 1
+//                                           }
+//
+//                                           Button("Home") {
+//                                               selectedView = 0
+//                                           }
+//
+//                                           Button("Logout") {
+//                                               loggedIn = false
+//                                               userManager.logout(viewRouter: viewRouter)
+//                                               user = ""
+//                                           }
+//                                       } label: {
+//                                           Label("Menu", systemImage: "ellipsis.circle")
+//                                       }
+//                                   }
+//                               }
+//               
+//            
+//               VStack {
+//                   if selectedView == 0 {
+//                       HomeContent().environmentObject(userManager)
+//                           .environmentObject(viewRouter)
+//                   } else if selectedView == 1 {
+//                       ProfileView( selectedImages: []).environmentObject(userManager)
+//                           .environmentObject(viewRouter)
+//                   }
+//               }
            }
-       }
+//       }
    }
   
 
@@ -76,10 +87,12 @@ struct HomeContent: View{
                             List {
                                 ForEach(events, id: \.self) { event in
                                     EventDetailView(event: event)
+                                    Spacer()
                                 }
                             }.navigationTitle("All Events")
                             .onAppear {
                                 events = DataManger.shared.fetchEvents()
+                                
                             }
         }
     }

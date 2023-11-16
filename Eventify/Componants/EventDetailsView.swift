@@ -59,7 +59,8 @@ struct EventDetailView: View {
                 }
             }
         }
-        .padding()
-        .foregroundColor(.gray)
+        .padding(.bottom)
+        .foregroundColor(.blue)
+        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
     }
 }

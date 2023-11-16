@@ -18,6 +18,8 @@ struct ProfileView: View {
     @State var selectedImages:[UIImage?]
     @State private var showAlert = false
     @State private var alertMessage = ""
+    @AppStorage("loggedIn") var loggedIn: Bool?
+    @AppStorage("username") var user: String?
        @State private var region = MKCoordinateRegion(
            center: CLLocationCoordinate2D(
                latitude: 40.83834587046632,
@@ -33,11 +35,23 @@ struct ProfileView: View {
     }
     var body: some View{
         VStack{
-            Button{
-                showAddEvent = true
-            }label: {
-                Label("Add Event",systemImage: "plus")
+            HStack{
+                Button {
+                    loggedIn = false
+                    userManager.logout(viewRouter: viewRouter)
+                    user = ""
+                }
+            label: {
+                Label("Logout", systemImage: "arrow.left.circle.fill")
             }
+                Spacer()
+                Button{
+                    showAddEvent = true
+                }label: {
+                    Label("Add Event",systemImage: "plus")
+                }.padding()
+            }.padding()
+           
             
                             if let username = userManager.user?.username {
                                 Text("Hello, \(username)")

@@ -39,6 +39,7 @@
 		7F6787712B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */; };
 		7F6787732B0513C400D9BBF3 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */; };
 		7F6787752B05A28500D9BBF3 /* EventImagesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787742B05A28500D9BBF3 /* EventImagesGrid.swift */; };
+		7FB3247D2B06371200B4D301 /* AllEventsOnMAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3247C2B06371100B4D301 /* AllEventsOnMAP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		7F6787742B05A28500D9BBF3 /* EventImagesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImagesGrid.swift; sourceTree = "<group>"; };
+		7FB3247C2B06371100B4D301 /* AllEventsOnMAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllEventsOnMAP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				7F67870C2B01113F00D9BBF3 /* MenuView.swift */,
 				7F67870E2B011D8600D9BBF3 /* ProfileView.swift */,
 				7F6787102B0157DA00D9BBF3 /* MapView.swift */,
+				7FB3247C2B06371100B4D301 /* AllEventsOnMAP.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				7F6786F92AFE4FDF00D9BBF3 /* splashView.swift in Sources */,
 				7F6787712B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift in Sources */,
 				7F67876F2B04E8C100D9BBF3 /* Event+CoreDataProperties.swift in Sources */,
+				7FB3247D2B06371200B4D301 /* AllEventsOnMAP.swift in Sources */,
 				7F6787352B02FC1200D9BBF3 /* ImageModel.swift in Sources */,
 				7F67876E2B04E8C100D9BBF3 /* Event+CoreDataClass.swift in Sources */,
 				7F6787752B05A28500D9BBF3 /* EventImagesGrid.swift in Sources */,
