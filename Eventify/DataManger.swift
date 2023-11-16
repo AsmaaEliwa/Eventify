@@ -153,6 +153,18 @@ class DataManger{
         }
     }
     
+    func deleteEvent(event:Event)->[Event]{
+        persistentContainer.viewContext.delete(event)
+        do {
+            try persistentContainer.viewContext.save()
+            print("event deleted")
+            let events = fetchEvents()
+            return events
+        }catch{
+            print(error)
+            return []
+        }
+    }
     
     
 }

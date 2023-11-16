@@ -12,13 +12,23 @@ import MapKit
 
 struct EventDetailView: View {
     @State private var newComment: String = ""
+    @EnvironmentObject var userManager: UserManager
     var event: Event
 
     var body: some View {
         VStack {
             HStack {
                 Text(event.user?.username ?? "No user")
-            }
+                Spacer()
+                Button{
+                    if event.user == userManager.user{
+                        DataManger.shared.deleteEvent(event:event)
+
+                    }
+                }label: {
+                    Label("", systemImage: "xmark.bin").foregroundColor(.red)
+                }
+            }.padding()
             Text(event.title ?? "No Title")
                 .font(.title)
 

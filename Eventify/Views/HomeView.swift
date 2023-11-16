@@ -86,7 +86,7 @@ struct HomeContent: View{
 
                             List {
                                 ForEach(events, id: \.self) { event in
-                                    EventDetailView(event: event)
+                                    EventDetailView(event: event).environmentObject(userManager)
                                     Spacer()
                                 }
                             }.navigationTitle("All Events")

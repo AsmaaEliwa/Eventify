@@ -42,7 +42,7 @@ struct ProfileView: View {
                     user = ""
                 }
             label: {
-                Label("Logout", systemImage: "arrow.left.circle.fill")
+                Label("Logout", systemImage: "arrow.left.circle.fill").foregroundColor(.red)
             }
                 Spacer()
                 Button{
