@@ -26,6 +26,11 @@ struct ProfileView: View {
                latitudeDelta: 0.03,
                longitudeDelta: 0.03)
        )
+    func reset(){
+        title = ""
+        details = ""
+        selectedImages = []
+    }
     var body: some View{
         VStack{
             Button{
@@ -44,7 +49,7 @@ struct ProfileView: View {
                             List {
                                 ForEach(Array(userManager.user?.events as? Set<Event> ?? [] ), id: \.self) { event in
 //                                    Text(event.title ?? "")
-                                    EventDetailView(event: event).padding()
+                                    EventDetailView(event: event).padding(.bottom)
                                 }
                             }.navigationTitle("My Events")
                 .sheet(isPresented: $showAddEvent, content: {
@@ -70,6 +75,9 @@ struct ProfileView: View {
                                           alertMessage = "Title and details cannot be empty"
                             } else {
                                 DataManger.shared.addEvent(title: title, details: details, user: userManager.user ?? User(), images: selectedImages,location: selectedCoordinate ?? CLLocationCoordinate2D() )
+                                reset()
+                                showAddEvent = false
+                                
                             }
                         }label: {
                             Label("Save",systemImage: "note").foregroundColor(Color("node")).padding()

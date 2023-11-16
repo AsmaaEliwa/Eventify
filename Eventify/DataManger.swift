@@ -135,7 +135,23 @@ class DataManger{
         }
     }
     
-    
+    func addComment(body:String , event:Event ){
+        if let entity =  NSEntityDescription.entity(forEntityName: "Comment", in: persistentContainer.viewContext){
+            let comment = NSManagedObject(entity:entity , insertInto: persistentContainer.viewContext)
+         
+            comment.setValue(body, forKey: "body")
+            event.addToComments(comment as! Comment)
+            UserManager().user?.addToComments(comment as! Comment)
+            
+            do{
+                try persistentContainer.viewContext.save()
+                print("Comment added")
+            }catch{
+                print(error)
+            }
+            
+        }
+    }
     
     
     

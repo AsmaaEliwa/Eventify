@@ -38,6 +38,7 @@
 		7F6787702B04E8C100D9BBF3 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */; };
 		7F6787712B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */; };
 		7F6787732B0513C400D9BBF3 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */; };
+		7F6787752B05A28500D9BBF3 /* EventImagesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6787742B05A28500D9BBF3 /* EventImagesGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		7F6787682B04E8C100D9BBF3 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7F6787692B04E8C100D9BBF3 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		7F6787742B05A28500D9BBF3 /* EventImagesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImagesGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				7F6787362B02FE2F00D9BBF3 /* ImagePicker.swift */,
 				7F67873B2B03BB3B00D9BBF3 /* MapBtns.swift */,
 				7F6787722B0513C400D9BBF3 /* EventDetailsView.swift */,
+				7F6787742B05A28500D9BBF3 /* EventImagesGrid.swift */,
 			);
 			path = Componants;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				7F67876F2B04E8C100D9BBF3 /* Event+CoreDataProperties.swift in Sources */,
 				7F6787352B02FC1200D9BBF3 /* ImageModel.swift in Sources */,
 				7F67876E2B04E8C100D9BBF3 /* Event+CoreDataClass.swift in Sources */,
+				7F6787752B05A28500D9BBF3 /* EventImagesGrid.swift in Sources */,
 				7F67876C2B04E8C100D9BBF3 /* User+CoreDataClass.swift in Sources */,
 				7F67870D2B01113F00D9BBF3 /* MenuView.swift in Sources */,
 				7F67873A2B03AC4800D9BBF3 /* LocationManger.swift in Sources */,
