@@ -74,22 +74,49 @@ struct HomeContent: View{
     @EnvironmentObject var userManager: UserManager
     @EnvironmentObject var viewRouter: ViewRouter
     @State var events: [Event] = []
+    @State var searchText = ""
+    
+    var filteredEvents: [Event] {
+        if searchText.isEmpty {
+            return events
+        } else {
+            return events.filter { $0.title?.lowercased().contains(searchText.lowercased()) ?? false }
+        }
+    }
     var body: some View{
         VStack{
-//                            Text("Hi")
+            //                            Text("Hi")
+            HStack{
+            if let username = userManager.user?.username {
+                Text("Hello, \(username)").padding()
+            } else {
+                Text("Hello, Guest")
+            }
             
-                            if let username = userManager.user?.username {
-                                Text("Hello, \(username)").padding()
-                            } else {
-                                Text("Hello, Guest")
-                            }
+            TextField("Search events", text: $searchText)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
+                .background(Color.white)
+                .cornerRadius(8)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
+                .padding(.horizontal)
+                .onChange(of: searchText) { _ in
+                    events = DataManger.shared.fetchEvents()
+                }
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+                .padding(.trailing, 10)
+            }.padding()
 
-                            List {
-                                ForEach(events, id: \.self) { event in
-                                    EventDetailView(event: event).environmentObject(userManager)
-                                    Spacer()
-                                }
-                            }.navigationTitle("All Events")
+                       List {
+                           ForEach(filteredEvents, id: \.self) { event in
+                               EventDetailView(event: event).environmentObject(userManager)
+                               Spacer()
+                           }
+                       }.navigationTitle("All Events")
                             .onAppear {
                                 events = DataManger.shared.fetchEvents()
                                 
