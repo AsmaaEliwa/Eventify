@@ -21,10 +21,10 @@ struct EventDetailView: View {
                 Text(event.user?.username ?? "No user")
                 Spacer()
                 Button{
-                    if event.user == userManager.user{
-                        DataManger.shared.deleteEvent(event:event)
-
-                    }
+//                    if event.user == userManager.user{
+//                        DataManger.shared.deleteEvent(event:event)
+//
+//                    }
                 }label: {
                     Label("", systemImage: "xmark.bin").foregroundColor(.red)
                 }
@@ -43,6 +43,7 @@ struct EventDetailView: View {
 
             List {
                 ForEach(Array(event.comments as? Set<Comment> ?? []), id: \.self) { comment in
+                    
                     if let username = comment.user?.username, let body = comment.body {
                         Text("\(username): \(body)")
                             .font(.system(size: 30))
@@ -71,6 +72,6 @@ struct EventDetailView: View {
         }
         .padding(.bottom)
         .foregroundColor(.blue)
-        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+        .shadow(radius: 10)
     }
 }

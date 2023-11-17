@@ -88,7 +88,7 @@ struct ProfileView: View {
                                           showAlert = true
                                           alertMessage = "Title and details cannot be empty"
                             } else {
-                                DataManger.shared.addEvent(title: title, details: details, user: userManager.user ?? User(), images: selectedImages,location: selectedCoordinate ?? CLLocationCoordinate2D() )
+                                userManager.addEvent(title: title, details: details, myUser: userManager.user ?? User(), images: selectedImages,location: selectedCoordinate ?? CLLocationCoordinate2D() )
                                 reset()
                                 showAddEvent = false
                                 

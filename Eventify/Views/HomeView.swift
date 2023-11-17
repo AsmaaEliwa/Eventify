@@ -76,10 +76,10 @@ struct HomeContent: View{
     @State var events: [Event] = []
     var body: some View{
         VStack{
-                            Text("Hi")
+//                            Text("Hi")
             
                             if let username = userManager.user?.username {
-                                Text("Hello, \(username)")
+                                Text("Hello, \(username)").padding()
                             } else {
                                 Text("Hello, Guest")
                             }
